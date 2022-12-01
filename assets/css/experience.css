@@ -97,7 +97,7 @@ section > div {
 
 /*color of experience page headings*/
 .my_experience {
-  color: #4e00bb;
+  color: #408081;
 }
 
 .sub-heading {
@@ -155,7 +155,6 @@ section > div {
   z-index: 0;
   -webkit-transition: transform 0.4s, 0.4s box-shadow;
   -moz-transition: transform 0.4s, 0.4s box-shadow;
-  cursor: pointer;
 }
 
 @media only screen and (min-width: 551px) {
@@ -196,6 +195,7 @@ ul ol {
   border-top-right-radius: 13px;
   width: 100%;
   height: 300px;
+  margin: 16px;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -219,7 +219,10 @@ ul ol {
     border-bottom-left-radius: 13px;
     border-top-right-radius: 0;
     max-width: 300px;
-    height: inherit;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    object-fit: contain;
+    padding: 16px;
     width: 100%;
   }
 }
@@ -263,6 +266,18 @@ ul ol {
   .exp-head {
     margin-top: 0rem !important;
   }
+}
+
+.card-body ol {
+  margin: 0;
+}
+
+.card-body ol li {
+  text-align: justify;
+}
+
+.card-body {
+  overflow-y: auto;
 }
 
 .card-body .pre-heading {
@@ -665,7 +680,7 @@ ul ol {
   text-align: center;
   letter-spacing: 1px;
 }
-.blog-slider__button:hover{
+.blog-slider__button:hover {
   color: white !important;
 }
 a:link {
